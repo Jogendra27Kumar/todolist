@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        section{
+            display: flex;
+            flex-direction: column;
+            border: 5px solid green;
+            align-items: center;
+            gap:5vw;
+            padding: 4vw;
+            height: 100vh;
+            justify-content: center;
+            background-image: linear-gradient(-120deg,violet,aqua);
+
+        }
+        h1{
+            font-size: 5vw;
+            color:white;
+        }
+        main{
+            display: flex;
+            /* border: 2px solid red; */
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            gap:5px;
+            padding: 3vw;
+            width: 40%;
+            height: 50%;
+            background-color:rgba(255, 255, 255, 0.909);
+          
+            border-radius: 10px;
+            font-size: 50px;
+            box-shadow: 0 0 40px 10px inset grey;
+            transition-property: all;
+            transition-duration: 1s;
+            
+        }
+        main:hover{
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Clock</h1>
+        <main>
+            <div id="hours">00</div><span>:</span>
+            <div id="minutes">00</div><span>:</span>
+            <div id="seconds">00</div>
+
+        </main>
+    </section>
+
+    <script src="/clock.js"></script>
+</body>
+</html>
